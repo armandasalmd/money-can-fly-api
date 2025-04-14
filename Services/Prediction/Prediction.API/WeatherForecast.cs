@@ -1,4 +1,4 @@
-namespace Prediction.API;
+namespace MCF.Prediction.API;
 
 public class WeatherForecast
 {

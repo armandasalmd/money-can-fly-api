@@ -1,4 +1,4 @@
-﻿namespace Prediction.Tests.Integration;
+﻿namespace MCF.Prediction.Tests.Integration;
 
 public class UnitTest1
 {

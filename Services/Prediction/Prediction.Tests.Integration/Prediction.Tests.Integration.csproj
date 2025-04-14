@@ -5,6 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <IsPackable>false</IsPackable>
+        <RootNamespace>MCF.Prediction.Tests.Integration</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

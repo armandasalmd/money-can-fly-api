@@ -1,4 +1,4 @@
-﻿namespace Identity.Tests.Integration;
+﻿namespace MCF.Identity.Tests.Integration;
 
 public class UnitTest1
 {

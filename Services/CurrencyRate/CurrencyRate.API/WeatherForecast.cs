@@ -1,4 +1,4 @@
-namespace CurrencyRate.API;
+namespace MCF.CurrencyRate.API;
 
 public class WeatherForecast
 {

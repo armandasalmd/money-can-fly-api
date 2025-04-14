@@ -1,4 +1,4 @@
-namespace Import.API;
+namespace MCF.Import.API;
 
 public class WeatherForecast
 {

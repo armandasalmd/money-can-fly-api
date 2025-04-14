@@ -3,7 +3,13 @@
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>MCF.Core</RootNamespace>
         <Nullable>enable</Nullable>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Aspire.Hosting.AppHost" Version="9.2.0" />
+      <PackageReference Include="Microsoft.Extensions.ServiceDiscovery" Version="9.2.0" />
+    </ItemGroup>
 
 </Project>

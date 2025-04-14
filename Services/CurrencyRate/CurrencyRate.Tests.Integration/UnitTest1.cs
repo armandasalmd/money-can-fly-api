@@ -1,4 +1,4 @@
-﻿namespace CurrencyRate.Tests.Integration;
+﻿namespace MCF.CurrencyRate.Tests.Integration;
 
 public class UnitTest1
 {

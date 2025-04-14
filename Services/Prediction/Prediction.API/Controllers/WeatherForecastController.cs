@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Prediction.API.Controllers;
+namespace MCF.Prediction.API.Controllers;
 
 [ApiController]
 [Route("[controller]")]

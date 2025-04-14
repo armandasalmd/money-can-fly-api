@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace CurrencyRate.API.Controllers;
+namespace MCF.CurrencyRate.API.Controllers;
 
 [ApiController]
 [Route("[controller]")]

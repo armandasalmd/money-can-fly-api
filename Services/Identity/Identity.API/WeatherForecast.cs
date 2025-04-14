@@ -1,4 +1,4 @@
-namespace Identity.API;
+namespace MCF.Identity.API;
 
 public class WeatherForecast
 {

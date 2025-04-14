@@ -1,4 +1,4 @@
-namespace FinanceMaster.API;
+namespace MCF.FinanceMaster.API;
 
 public class WeatherForecast
 {

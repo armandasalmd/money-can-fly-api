@@ -1,4 +1,4 @@
-﻿namespace FinanceMaster.Tests.Integration;
+﻿namespace MCF.FinanceMaster.Tests.Integration;
 
 public class UnitTest1
 {

@@ -1,4 +1,4 @@
-﻿namespace Import.Client;
+﻿namespace MCF.Import.Client;
 
 public class Class1
 {

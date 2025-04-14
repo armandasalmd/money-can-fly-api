@@ -1,4 +1,4 @@
-﻿namespace Import.Tests.Integration;
+﻿namespace MCF.Import.Tests.Integration;
 
 public class UnitTest1
 {
