@@ -1,0 +1,39 @@
+# Build output
+bin/
+obj/
+
+# .NET user-specific files
+*.user
+*.userprefs
+*.suo
+
+# Visual Studio Code
+.vscode/
+
+# Rider IDE
+.idea/
+
+# Dependency directories
+packages/
+node_modules/
+
+# Test results
+TestResults/
+*.trx
+*.xml
+
+# Environment-specific files
+appsettings.Development.json
+*.csproj.user
+
+# Logs and temporary files
+*.log
+*.tmp
+*.cache
+
+# Playwright (if used for testing)
+playwright-report/
+test-results/
+playwright/.cache/
+
+.DS_Store

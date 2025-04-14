@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.API", "Identity.API\Identity.API.csproj", "{F3E1A72F-DF83-4A85-9723-B2A07C3BDA23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Client", "Identity.Client\Identity.Client.csproj", "{AADD63DE-81F0-4912-8950-CB511C06FB7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Tests.Integration", "Identity.Tests.Integration\Identity.Tests.Integration.csproj", "{6476D066-959F-4F36-A83C-27B16BD4D5F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3E1A72F-DF83-4A85-9723-B2A07C3BDA23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3E1A72F-DF83-4A85-9723-B2A07C3BDA23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3E1A72F-DF83-4A85-9723-B2A07C3BDA23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3E1A72F-DF83-4A85-9723-B2A07C3BDA23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AADD63DE-81F0-4912-8950-CB511C06FB7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AADD63DE-81F0-4912-8950-CB511C06FB7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AADD63DE-81F0-4912-8950-CB511C06FB7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AADD63DE-81F0-4912-8950-CB511C06FB7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6476D066-959F-4F36-A83C-27B16BD4D5F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6476D066-959F-4F36-A83C-27B16BD4D5F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6476D066-959F-4F36-A83C-27B16BD4D5F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6476D066-959F-4F36-A83C-27B16BD4D5F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

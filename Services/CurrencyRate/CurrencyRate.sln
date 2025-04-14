@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyRate.API", "CurrencyRate.API\CurrencyRate.API.csproj", "{2E1FCDA6-610A-4175-A5BA-95F336221CD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyRate.Client", "CurrencyRate.Client\CurrencyRate.Client.csproj", "{AC0C2B03-62A8-4E69-934C-6C8AFC05AD4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyRate.Tests.Integration", "CurrencyRate.Tests.Integration\CurrencyRate.Tests.Integration.csproj", "{ECCDEE13-2C59-454E-BFC8-1686A0680776}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E1FCDA6-610A-4175-A5BA-95F336221CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E1FCDA6-610A-4175-A5BA-95F336221CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E1FCDA6-610A-4175-A5BA-95F336221CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E1FCDA6-610A-4175-A5BA-95F336221CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC0C2B03-62A8-4E69-934C-6C8AFC05AD4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC0C2B03-62A8-4E69-934C-6C8AFC05AD4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC0C2B03-62A8-4E69-934C-6C8AFC05AD4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC0C2B03-62A8-4E69-934C-6C8AFC05AD4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECCDEE13-2C59-454E-BFC8-1686A0680776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECCDEE13-2C59-454E-BFC8-1686A0680776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECCDEE13-2C59-454E-BFC8-1686A0680776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECCDEE13-2C59-454E-BFC8-1686A0680776}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

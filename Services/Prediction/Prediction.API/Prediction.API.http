@@ -1,0 +1,6 @@
+@Prediction.API_HostAddress = http://localhost:5048
+
+GET {{Prediction.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

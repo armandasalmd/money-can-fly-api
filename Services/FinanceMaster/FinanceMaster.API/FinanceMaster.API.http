@@ -1,0 +1,6 @@
+@FinanceMaster.API_HostAddress = http://localhost:5056
+
+GET {{FinanceMaster.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

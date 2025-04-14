@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceMaster.API", "FinanceMaster.API\FinanceMaster.API.csproj", "{48FAEEAA-FDEB-4993-97AF-7BE434B669EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceMaster.Client", "FinanceMaster.Client\FinanceMaster.Client.csproj", "{663B1DA8-439D-4778-8713-063362E02CD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceMaster.Tests.Integration", "FinanceMaster.Tests.Integration\FinanceMaster.Tests.Integration.csproj", "{EC6FEE64-AFD1-47BF-B374-C92F595DDC3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48FAEEAA-FDEB-4993-97AF-7BE434B669EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48FAEEAA-FDEB-4993-97AF-7BE434B669EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48FAEEAA-FDEB-4993-97AF-7BE434B669EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48FAEEAA-FDEB-4993-97AF-7BE434B669EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{663B1DA8-439D-4778-8713-063362E02CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{663B1DA8-439D-4778-8713-063362E02CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{663B1DA8-439D-4778-8713-063362E02CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{663B1DA8-439D-4778-8713-063362E02CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6FEE64-AFD1-47BF-B374-C92F595DDC3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6FEE64-AFD1-47BF-B374-C92F595DDC3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6FEE64-AFD1-47BF-B374-C92F595DDC3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6FEE64-AFD1-47BF-B374-C92F595DDC3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

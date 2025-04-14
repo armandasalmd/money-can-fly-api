@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Import.API", "Import.API\Import.API.csproj", "{FF722983-2EBE-4ACC-88C8-687AC2135532}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Import.Client", "Import.Client\Import.Client.csproj", "{54C950EC-EE7F-416B-8E55-7ED5CEDD64DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Import.Tests.Integration", "Import.Tests.Integration\Import.Tests.Integration.csproj", "{463A3357-8FA4-4CCE-905B-751A0AE5154D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF722983-2EBE-4ACC-88C8-687AC2135532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF722983-2EBE-4ACC-88C8-687AC2135532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF722983-2EBE-4ACC-88C8-687AC2135532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF722983-2EBE-4ACC-88C8-687AC2135532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54C950EC-EE7F-416B-8E55-7ED5CEDD64DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54C950EC-EE7F-416B-8E55-7ED5CEDD64DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54C950EC-EE7F-416B-8E55-7ED5CEDD64DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54C950EC-EE7F-416B-8E55-7ED5CEDD64DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{463A3357-8FA4-4CCE-905B-751A0AE5154D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{463A3357-8FA4-4CCE-905B-751A0AE5154D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{463A3357-8FA4-4CCE-905B-751A0AE5154D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{463A3357-8FA4-4CCE-905B-751A0AE5154D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
