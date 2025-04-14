@@ -34,3 +34,12 @@ graph TD
     import-ms -. Publish Import Events .-> event-bus{Event Bus}
     event-bus -. Consume Import Events .-> finance-core-ms
 ```
+
+
+#### Step 2. Picking correct tools for work
+
+- TBD; Libraries, frameworks, Aspire, App Insights, Mongo SDK
+
+#### Step 3. Architecturing project/folder structure
+
+- TBD; Core folder/project, Services/<FOO>/3 sub projects, Integration Testing
