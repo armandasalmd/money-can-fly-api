@@ -1,6 +1,7 @@
 ## MoneyCanFly API - MicroServices
 
 This API is a rework of an already working NextJS API [here](https://github.com/armandasalmd/money-can-fly/tree/production/src/pages/api). Existing API idea has been selected for rework as its Business domain creates a well-rounded set of challenges to practice for Microservices architecture (`C#.NET`).
+Have a look at DB entities [here](https://github.com/armandasalmd/money-can-fly/tree/production/src/server/models/mongo) for a summary picture.
 
 #### Step 1. Breaking down existing monolith
 
@@ -35,11 +36,42 @@ graph TD
     event-bus -. Consume Import Events .-> finance-core-ms
 ```
 
-
 #### Step 2. Picking correct tools for work
 
-- TBD; Libraries, frameworks, Aspire, App Insights, Mongo SDK
+To create a solid project, we need to gear up! Let's consider the following libraries and architectural patterns
 
-#### Step 3. Architecturing project/folder structure
+- `.NET Aspire` - set of tools to orchestrate microservices locally and more. It's like a local API gateway. 
+  - `App Insights` - for tracing
+- `MongoDB.Driver` - robust DB driver
+- `gRPC` - communication method internally between services (can be 2x times faster than HTTP due to its nature)
+- `Azure Service Bus` - simple reliable queuing service, for event-driven communication
+- `Azure Key Vault` - for safe secret management
+- `Azure Container Apps` - for hosting containerized API servers on cloud. Powerful, fully-managed service that replaces a need for Kubernetes, thus, saving a great deal of time and resources.
 
-- TBD; Core folder/project, Services/<FOO>/3 sub projects, Integration Testing
+#### Step 3. Defining Project's structure
+
+1. `/AppHost` - Locally used web app that runs all microservices (acts as API Gateway)
+2. `/Core` - shared class library, with mostly abstract logic, used in all microservices
+3. `/Services/<SERVICE_NAME>`
+    - `/<SERVICE_NAME>.API` - Web API project
+    - `/<SERVICE_NAME>.Client` - C# Class library with Models. Also, used by other services to communicate
+    - `/<SERVICE_NAME>.Tests.Integration`
+
+> Note. In addition to `AppServices.sln`, each service has its own Standalone `.sln` (solution) file.
+
+#### Step 4. Crafting safe Authentication mechanism
+
+Authentication, no doubt, is an integral part on any application. Designing secure API access must conform to CIA Triad.
+
+**Layers of authentication:**
+1. Handle User login & register
+    - For that we will use Firebase Authentication platform. It issues JWT IdToken after successful login
+2. Establish secure UI-to-API auth session
+    - Issued and attached as `HTTPOnly` + `Secure` cookie at `Identity.API` (separate JWT)
+    - Validated at Azure APIM (API Gateway) level
+3. Inter-service communication
+    - Azure's Managed Identity
+
+#### Step 5. Porting business logic
+
+TBD;

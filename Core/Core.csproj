@@ -12,4 +12,9 @@
       <PackageReference Include="Microsoft.Extensions.ServiceDiscovery" Version="9.2.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Domain\" />
+      <Folder Include="Http\" />
+    </ItemGroup>
+
 </Project>

@@ -3,7 +3,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace MCF.Core;
 
-public static class Extensions
+public static class AspireAppHostExtensions
 {
     public static IHostApplicationBuilder AddServiceDefaults(this IHostApplicationBuilder builder)
     {
