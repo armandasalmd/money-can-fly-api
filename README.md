@@ -59,18 +59,50 @@ To create a solid project, we need to gear up! Let's consider the following libr
 
 > Note. In addition to `AppServices.sln`, each service has its own Standalone `.sln` (solution) file.
 
-#### Step 4. Crafting safe Authentication mechanism
+#### Step 4. Crafting robust Auth mechanism
 
-Authentication, no doubt, is an integral part on any application. Designing secure API access must conform to CIA Triad.
+Authentication & Authorization, no doubt, is an integral part on any application. Designing secure API access must conform to CIA Triad.
 
 **Layers of authentication:**
-1. Handle User login & register
+1. Handle User login & register (authentication)
     - For that we will use Firebase Authentication platform. It issues JWT IdToken after successful login
 2. Establish secure UI-to-API auth session
     - Issued and attached as `HTTPOnly` + `Secure` cookie at `Identity.API` (separate JWT)
     - Validated at Azure APIM (API Gateway) level
 3. Inter-service communication
     - Azure's Managed Identity
+
+This can also be described by a visualisation:
+
+```mermaid
+sequenceDiagram
+    actor U as User
+    participant F as ReactJs Frontend
+    participant FB as Firebase
+    participant APIM as Azure APIM
+    participant I as Identity.API
+    participant S as SomeResource.API
+    participant A as AnotherResource.API
+
+    U->>F: Initiates login
+    F->>FB: Requests authentication
+    FB-->>F: Issues IdToken
+    F->>APIM: Sends IdToken
+    APIM->>I: Forwards IdToken
+    I->>I: Validates IdToken
+    I-->>APIM: Issues AccessToken (cookie)
+    APIM-->>F: Returns AccessToken (cookie)
+    F->>APIM: Subsequent request with AccessToken
+    APIM->>APIM: Validates JWT (AccessToken)
+    APIM->>S: Forwards authorized request
+    S->>S: Processes request
+    S->>A: Inter-service Request (using Managed Identity)
+    A->>A: Validates Managed Identity token
+    A-->>S: Response
+    S-->>APIM: Response
+    APIM-->>F: Response
+    F-->>U: Displays result
+```
 
 #### Step 5. Porting business logic
 
