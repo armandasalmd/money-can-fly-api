@@ -1,9 +1,11 @@
 ## MoneyCanFly API - MicroServices edition
 
 This API is a rework of an already working NextJS API [here](https://github.com/armandasalmd/money-can-fly/tree/production/src/pages/api). Existing API idea has been selected for rework as its Business domain creates a well-rounded set of challenges to practice for Microservices architecture (`C#.NET`).
-Have a look at DB entities [here](https://github.com/armandasalmd/money-can-fly/tree/production/src/server/models/mongo) for a summary picture. Read my 5 step process to see how I did it.
+Have a look at DB entities [here](https://github.com/armandasalmd/money-can-fly/tree/production/src/server/models/mongo) for a summary picture. 
 
 > Goal. Engineer .NET microservices from A to Z using best practices.
+
+Read my 5 step process to see how I did it.
 
 ### Step 1. Breaking down existing monolith
 
