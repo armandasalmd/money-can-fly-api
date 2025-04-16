@@ -1,11 +1,11 @@
 ## MoneyCanFly API - MicroServices edition
 
 This API is a rework of an already working NextJS API [here](https://github.com/armandasalmd/money-can-fly/tree/production/src/pages/api). Existing API idea has been selected for rework as its Business domain creates a well-rounded set of challenges to practice for Microservices architecture (`C#.NET`).
-Have a look at DB entities [here](https://github.com/armandasalmd/money-can-fly/tree/production/src/server/models/mongo) for a summary picture.
+Have a look at DB entities [here](https://github.com/armandasalmd/money-can-fly/tree/production/src/server/models/mongo) for a summary picture. Read my 5 step process to see how I did it.
 
 > Goal. Engineer .NET microservices from A to Z using best practices.
 
-#### Step 1. Breaking down existing monolith
+### Step 1. Breaking down existing monolith
 
 Existing app [here](https://github.com/armandasalmd/money-can-fly/tree/production/src/pages/api) is a full-stack NextJS app running as a server-less (edge) functions on Vercel PaaS. App scales horizontally, by default. On the other hand, the entire NextJS app is 1 big Solution/Project, with mixed up and cross referenced Manager classes, Models, Utilities and so on.
 
@@ -38,7 +38,7 @@ graph TD
     event-bus -. Consume Import Events .-> finance-core-ms
 ```
 
-#### Step 2. Picking correct tools for work
+### Step 2. Picking correct tools for work
 
 To create a solid project, we need to gear up! Let's consider the following libraries and architectural patterns
 
@@ -50,7 +50,7 @@ To create a solid project, we need to gear up! Let's consider the following libr
 - `Azure Key Vault` - for safe secret management
 - `Azure Container Apps` - for hosting containerized API servers on cloud. Powerful, fully-managed service that replaces a need for Kubernetes, thus, saving a great deal of time and resources.
 
-#### Step 3. Defining Project's structure
+### Step 3. Defining Project's structure
 
 1. `/AppHost` - Locally used web app that runs all microservices (acts as API Gateway)
 2. `/Core` - shared class library, with mostly abstract logic, used in all microservices
@@ -61,7 +61,7 @@ To create a solid project, we need to gear up! Let's consider the following libr
 
 > Note. In addition to `AppServices.sln`, each service has its own Standalone `.sln` (solution) file.
 
-#### Step 4. Crafting robust Auth mechanism
+### Step 4. Crafting robust Auth mechanism
 
 Authentication & Authorization, no doubt, is an integral part on any application. Designing secure API access must conform to CIA Triad.
 
@@ -106,7 +106,7 @@ sequenceDiagram
     F-->>U: Displays result
 ```
 
-#### Step 5. Porting business logic
+### Step 5. Porting business logic
 
 I am in luck, as business requirements are already defined in a working NextJs app [here](https://github.com/armandasalmd/money-can-fly/tree/production/src/pages/api).
 
