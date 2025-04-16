@@ -1,7 +1,9 @@
-## MoneyCanFly API - MicroServices
+## MoneyCanFly API - MicroServices edition
 
 This API is a rework of an already working NextJS API [here](https://github.com/armandasalmd/money-can-fly/tree/production/src/pages/api). Existing API idea has been selected for rework as its Business domain creates a well-rounded set of challenges to practice for Microservices architecture (`C#.NET`).
 Have a look at DB entities [here](https://github.com/armandasalmd/money-can-fly/tree/production/src/server/models/mongo) for a summary picture.
+
+> Goal. Engineer .NET microservices from A to Z using best practices.
 
 #### Step 1. Breaking down existing monolith
 
@@ -106,4 +108,13 @@ sequenceDiagram
 
 #### Step 5. Porting business logic
 
-TBD;
+I am in luck, as business requirements are already defined in a working NextJs app [here](https://github.com/armandasalmd/money-can-fly/tree/production/src/pages/api).
+
+Although, re-writing logic into different architectural idea will be tricky. For example, after the analyses of the main **Dashboard** endpoint [GET /api/displayModel](https://github.com/armandasalmd/money-can-fly/blob/production/src/pages/api/dashboard/displayModel.ts), I realized that I can use many OOP design patterns:
+
+1. `Builder Pattern` + `Chain of Responsibility` for Section building
+2. `Facade Pattern` to organize Dashboard building
+3. `Strategy Pattern` for conditional data loading
+4. `Composite Pattern` for final implementation
+
+In addition, I am planning to use Domain-Driven-design principles, `Result<T>` class and other advanced techniques for creating scalable and maintainable code.
