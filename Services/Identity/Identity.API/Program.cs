@@ -1,9 +1,15 @@
 using MCF.Core;
 using MCF.Core.Auth;
+using MCF.Identity.API;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services
+    .AddOptions<AppSettings>()
+    .Bind(builder.Configuration)
+    .ValidateDataAnnotations()
+    .ValidateOnStart();
+
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddHttpClient();

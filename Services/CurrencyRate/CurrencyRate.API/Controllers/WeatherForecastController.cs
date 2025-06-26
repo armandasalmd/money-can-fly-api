@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 
 namespace MCF.CurrencyRate.API.Controllers;
 
@@ -6,6 +7,8 @@ namespace MCF.CurrencyRate.API.Controllers;
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
+    private readonly AppSettings _appSettings;
+
     private static readonly string[] Summaries = new[]
     {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -13,9 +16,10 @@ public class WeatherForecastController : ControllerBase
 
     private readonly ILogger<WeatherForecastController> _logger;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public WeatherForecastController(ILogger<WeatherForecastController> logger, IOptions<AppSettings> appSettings)
     {
         _logger = logger;
+        _appSettings = appSettings.Value;
     }
 
     [HttpGet(Name = "GetWeatherForecast")]
@@ -25,7 +29,7 @@ public class WeatherForecastController : ControllerBase
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
                 TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)] + _appSettings.CurrencyAPIKey
             })
             .ToArray();
     }
